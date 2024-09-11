@@ -1,0 +1,222 @@
+/* Частина 1 */
+body {
+  margin: 25px;
+  padding: 0;
+  background: url(sky.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px;
+  background: linear-gradient(grey, white, grey);
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+main {
+  float: left;
+  max-width: 75%;
+}
+
+aside .side-menu {
+  float: right;
+  max-width: 25%;
+  min-width: 200px;
+  max-height: 200px;
+  background-color: #e4e6e5;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  margin: 80px 0 0 20px;
+}
+
+.side-menu li {
+  margin: 7px 0;
+  list-style: none;
+}
+
+.side-menu #menu-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: black;
+}
+
+.side-menu li a {
+  text-decoration: none;
+  color: steelblue;
+  padding: 2px;
+}
+
+a:hover {
+  color: turquoise;
+  font-weight: bold;
+}
+
+.main-content h2 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+.main-content p {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: 20px;
+  color: #000;
+}
+
+.main-content p[id-data="1"] {
+  background-color: #cdd4d6;
+}
+
+.main-content p[id-data="2"] {
+  background-color: #e6f4f8;
+}
+
+.main-content p::first-line {
+  color: darkblue;
+}
+
+.main-content p::first-letter {
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+.main-content p img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  transition: all 3s;
+}
+
+.main-content p img:hover {
+  transform: scale(2);
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+  height: 100px;
+  background: gray;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+/* Частина 2 - Блок навігації */
+
+/* Стили для навігаційного меню */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #333;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "⋮";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #444;
+  color: white;
+}
+
+aside {
+  margin-top: 20px;
+}
+
+.main-content {
+  margin: 20px;
+}
+
+.main-content h2 {
+  text-align: center;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  text-align: center;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+nav {
+  margin: 0;
+  border-bottom: #adb1b2 solid 1px;
+  padding: 25px 5px;
+  background: #e4e6e5;
+  text-align: center;
+}
+
+nav a {
+  padding: 0px 32px;
+  font-size: 18px;
+  color: #044368;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:not(:last-child)::after {
+  content: "⋮"; /* символ три вертикальні крапки */
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #868B8F;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(115, 103, 124);
+}
+
+nav a:last-child {
+  border-right: none;
+}

@@ -1,0 +1,130 @@
+/* Основні стилі */
+:root {
+  --main-color: #333;
+  --secondary-color: #555;
+  --font-size-base: 1rem;
+  --background-color: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.pinimg.com/564x/ca/c8/e4/cac8e460971f65b735568e61f6c1638a.jpg') no-repeat fixed center;
+  background-size: cover;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--main-color);
+  font-size: var(--font-size-base);
+}
+
+header {
+  background-color: var(--background-color);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+nav {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+main {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Стилізація зображень та іконок */
+img, .fa {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover, .fa:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Стилізація форми */
+form label {
+  font-size: 1.1rem;
+  color: var(--main-color);
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+/* Валідація форми */
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+/* Оптимізація CSS з використанням змінних */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--secondary-color);
+}
+
+footer p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
